@@ -1,0 +1,83 @@
+{
+	"info": {
+		"_postman_id": "22c9bd48-1197-47ab-a7db-6d35e1a30974",
+		"name": "Laravel-Schedular",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "445581"
+	},
+	"item": [
+		{
+			"name": "get-users",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/users?limit=2&select_fields[]=name&select_fields[]=email",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users"
+					],
+					"query": [
+						{
+							"key": "gender",
+							"value": "male",
+							"disabled": true
+						},
+						{
+							"key": "city",
+							"value": "test",
+							"disabled": true
+						},
+						{
+							"key": "country",
+							"value": "Ukraine",
+							"disabled": true
+						},
+						{
+							"key": "limit",
+							"value": "2"
+						},
+						{
+							"key": "select_fields[]",
+							"value": "name"
+						},
+						{
+							"key": "select_fields[]",
+							"value": "email"
+						},
+						{
+							"key": "select_fields[]",
+							"value": "city",
+							"disabled": true
+						},
+						{
+							"key": "select_fields[]",
+							"value": "country",
+							"disabled": true
+						},
+						{
+							"key": "select_fields[]",
+							"value": "gender",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
