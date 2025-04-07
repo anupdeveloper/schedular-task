@@ -14,6 +14,14 @@ class Kernel extends ConsoleKernel
 
     protected function schedule(Schedule $schedule)
     {
-        $schedule->command('fetch:random-users')->everyMinute();
+        $schedule->command('fetch:random-users')->everyFiveMinutes();
+        
+    }
+
+    protected function commands()
+    {
+        $this->load(__DIR__ . '/Commands');
+
+        require base_path('routes/console.php');
     }
 }
